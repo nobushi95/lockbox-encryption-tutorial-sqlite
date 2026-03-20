@@ -1,0 +1,27 @@
+<h1>ユーザー新規登録</h1>
+
+<% if @user.errors.any? %>
+  <ul>
+    <% @user.errors.full_messages.each do |msg| %>
+      <li><%= msg %></li>
+    <% end %>
+  </ul>
+<% end %>
+
+<%= form_with model: @user do |f| %>
+  <div>
+    <%= f.label :name, "名前" %>
+    <%= f.text_field :name %>
+  </div>
+  <div>
+    <%= f.label :email, "メール" %>
+    <%= f.email_field :email %>
+  </div>
+  <div>
+    <%= f.label :phone, "電話番号" %>
+    <%= f.text_field :phone %>
+  </div>
+  <%= f.submit "登録" %>
+<% end %>
+
+<%= link_to "一覧へ戻る", users_path %>
