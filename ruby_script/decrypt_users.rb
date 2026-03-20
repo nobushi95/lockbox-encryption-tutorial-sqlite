@@ -5,8 +5,6 @@ Dotenv.load(File.expand_path("../.env", __dir__))
 require "lockbox"
 require "sqlite3"
 
-Lockbox.master_key = ENV.fetch("LOCKBOX_MASTER_KEY")
-
 DB_PATH = File.expand_path("../rails_app/storage/development.sqlite3", __dir__)
 
 def make_box(table:, attribute:)
