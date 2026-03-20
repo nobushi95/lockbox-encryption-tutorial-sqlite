@@ -1,1 +1,19 @@
+# 環境変数（マスターキーを含む）
 .env
+
+# OS
+.DS_Store
+Thumbs.db
+
+# エディタ
+.idea/
+.vscode/
+*.swp
+*.swo
+
+# ruby_script: Bundler
+ruby_script/.bundle/
+ruby_script/vendor/
+
+# rails_app: Rails が生成するデフォルト README（このプロジェクトのREADMEを使用）
+rails_app/README.md
