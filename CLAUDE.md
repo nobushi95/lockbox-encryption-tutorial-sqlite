@@ -8,7 +8,7 @@ lockbox gem を使ったフィールドレベル暗号化（AES-GCM）のチュ�
 
 ## 環境構築
 
-Ruby バージョンは `.tool-versions` で `3.3.10` を指定。
+Ruby バージョンは `.tool-versions` で `3.3.13` を指定。
 
 マスターキーの設定（rails_app と ruby_script で共有）:
 ```bash

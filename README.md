@@ -16,7 +16,7 @@
 ├── .env                          # 開発用環境変数（git 除外）
 ├── .env.example                  # 環境変数のテンプレート
 ├── .gitignore
-├── .tool-versions                # Ruby 3.3.10
+├── .tool-versions                # Ruby 3.3.13
 ├── rails_app/                    # Rails 7.2 アプリ
 │   ├── app/
 │   │   ├── controllers/users_controller.rb
@@ -36,7 +36,7 @@
 
 ### 前提条件
 
-- Ruby 3.3.10（[asdf](https://asdf-vm.com/) 推奨）
+- Ruby 3.3.13（[asdf](https://asdf-vm.com/) 推奨）
 
 ### 1. マスターキーを生成して .env を作成
 
